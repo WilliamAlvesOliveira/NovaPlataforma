@@ -1,0 +1,25 @@
+#fisiologia-page{
+    margin: 0;
+    background-color: #FAFAFA;
+}
+
+li{
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.titulo-aula{
+    margin: 0;
+    background-image: linear-gradient(to left,rgb(238, 158, 158),rgba(238, 158, 158, 0.06)) ;
+    padding: 15px;
+}
+
+.card{
+    padding: 10px;
+}
+
+.card p{
+    text-indent: 20px;
+}

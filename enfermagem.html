@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enfermagem</title>
+    <link rel="stylesheet" href="./css/mainStyle.css">
+    <link rel="stylesheet" href="./css/Pages/enfermagem.css">
+</head>
+<body id="enfermagem-page">
+    <h2 class="centralized ">Curso Enfermagem</h2>
+
+    <nav class="menu" aria-label="Menu principal">
+        <button class="menu-principal-btn" 
+        data-id="disciplinas" 
+        aria-label="Abrir disciplinas">
+            disciplinas
+        </button>
+
+        <button class="menu-principal-btn" 
+        data-id="opção2" 
+        aria-label="Abrir opção 2">
+            Opção 2
+        </button>
+
+        <button class="menu-principal-btn" 
+        data-id="opção3" 
+        aria-label="Abrir opção 3">
+            Opção 3
+        </button>
+
+        <button class="menu-principal-btn" 
+        data-id="opção4" 
+        aria-label="Abrir opção 4">
+            Opção 4
+        </button>
+
+        <button class="menu-principal-btn"
+        data-id="opção5"
+        aria-label="Abrir opção 5">
+            Opção 5
+        </button>
+
+        <button class="menu-principal-btn" 
+        data-id="opção6" 
+        aria-label="Abrir opção 6">
+            Opção 6
+        </button>
+    </nav>
+
+    <hr>
+
+    <div class="option-window default-text">
+        <h3>Conteúdo Default</h3>
+        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, laboriosam quo inventore nesciunt earum dolor sit eum necessitatibus mollitia laborum saepe facilis asperiores et nihil cumque recusandae quaerat deserunt.
+        Est sed perferendis veniam distinctio quibusdam labore veritatis temporibus, autem similique porro asperiores deserunt, enim dignissimos accusamus nam voluptate libero vero, tempore minima debitis assumenda. Praesentium rerum odio reprehenderit molestias!
+        Iste omnis neque nam porro repudiandae laudantium dolorum odit consequuntur ipsum incidunt vero perspiciatis tempora, officiis dolores architecto dolorem ab ullam nisi! Facilis et quasi possimus quam esse rem culpa.
+        Distinctio doloremque sapiente repellendus, fugiat veritatis illo quos quia aliquam </P>
+    </div>
+
+    <div id="disciplinas" class="option-window hidden">
+        <ul class="materias">
+            <a href="fisiologia.html" class="materia-btn">
+                Fisiologia
+            </a>
+            <a href="#" class="materia-btn">
+                Outras Matérias
+            </a>
+            <a href="#" class="materia-btn">
+                Outras Matérias
+            </a>
+            <a href="#" class="materia-btn">
+                Outras Matérias
+            </a>
+            <a href="#" class="materia-btn">
+                Outras Matérias
+            </a>
+            <a href="#" class="materia-btn">
+                Outras Matérias
+            </a>
+            <a href="#" class="materia-btn">
+                Outras Matérias
+            </a>
+            <a href="#" class="materia-btn">
+                Outras Matérias
+            </a>
+            <a href="#" class="materia-btn">
+                Outras Matérias
+            </a>
+        </ul>
+    </div>
+
+
+    <div id="opção2"  class="option-window opçaoPlaceHolder hidden">
+        Conteúdo da disciplina
+    </div>
+    <div id="opção3" class="option-window opçaoPlaceHolder hidden">
+        Conteúdo da disciplina
+    </div>
+    <div id="opção4" class="option-window opçaoPlaceHolder hidden">
+        Conteúdo da disciplina
+    </div>
+    <div id="opção5" class="option-window opçaoPlaceHolder hidden">
+        Conteúdo da disciplina
+    </div>
+    <div id="opção6" class="option-window opçaoPlaceHolder hidden">
+        Conteúdo da disciplina
+    </div>
+    <div id="opção7" class="option-window opçaoPlaceHolder hidden">
+        Conteúdo da disciplina
+    </div>
+    <div id="opção8" class="option-window opçaoPlaceHolder hidden">
+        Conteúdo da disciplina
+    </div>
+
+    <script>
+        function showDisplay(e){
+            if (!(e.target instanceof HTMLButtonElement)) return;
+
+            const buttons = document.querySelectorAll('.menu-principal-btn');
+            console.log(buttons)
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            const options = document.querySelectorAll('.option-window');
+            options.forEach(op => op.classList.add('hidden'));
+
+            const opcao = '#' + e.target.dataset.id;
+            document.querySelector(opcao).classList.remove('hidden');
+
+            e.target.classList.add('active');
+        }
+
+        document.querySelector('.menu').addEventListener('click', showDisplay)
+    </script>
+</body>
+</html>

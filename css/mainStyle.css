@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;;
+}
+
+body{
+    padding: 10px;
+}
+
+.centralized-page, .centralized{
+    text-align: center;
+}
+
+.center-flex{
+    align-items: center;
+    justify-content: center;
+}

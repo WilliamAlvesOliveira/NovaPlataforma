@@ -1,0 +1,125 @@
+#enfermagem-page{
+    background-color: #FAFAFA;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+.menu{
+    margin: 20px 0px;
+    max-width: 1300px;
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+    flex-wrap: wrap ;
+    gap: 20px;
+}
+
+.menu-principal-btn{
+    background-image: linear-gradient(#A2F899, #63F654);
+    color: #063F00;
+    font-weight: bold;
+    font-size: 16px;
+    width: 150px;
+    padding: 15px;
+    border: 1px solid #063F00;
+    border-radius: 5px;
+}
+
+.menu-principal-btn:hover{
+    background-image: linear-gradient(#63F654, #4DC141);
+}
+
+hr{
+    margin: 20px 0px;
+}
+
+.hidden{
+    display: none;
+}
+
+.active{
+    outline: 4px solid #063F00;
+    background-image: linear-gradient(#63F654, #4DC141);
+}
+
+.option-window{
+    background-color: #F5F5F5;
+    border: 1px solid #ff0000;
+    border-radius: 20px;
+    padding: 15px;
+    max-width: 2500px;
+    
+}
+
+.default-text h3{
+    text-align: center;
+}
+
+.default-text p{
+    text-indent: 20px;
+}
+
+#opção2{
+    background-color: aliceblue;
+}
+#opção3{
+    background-color: antiquewhite;
+}
+#opção4{
+    background-color: aqua;
+}
+#opção5{
+    background-color: aquamarine;
+}
+#opção6{
+    background-color: azure;
+}
+#opção7{
+    background-color: beige;
+}
+#opção8{
+    background-color: bisque;
+}
+
+#disciplinas{
+    align-self: center;
+}
+
+.materias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.materia-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: #7FFFF1;
+    text-align: center;
+    font-size: clamp(1em,3vw,1.17em);
+    font-weight: bold;
+    color: #0C3B92;
+    border: 1px solid #051B43;
+    border-radius: 5px;
+}
+
+.materia-btn:hover{
+    background-color: #ee9e9e;
+}
+
+.materia > li:hover{
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.399), rgba(255, 0, 0, 0));
+}
+
+.materia > li > a{
+    display: block;
+}
+
+.materia > li > a:hover{
+    color: black;
+}
