@@ -6,7 +6,15 @@
 }
 
 body{
-    padding: 10px;
+    background-color: #E2EDED ;
+}
+
+:root{
+    --text-bg-white: #F5F5F5;
+    --red: #ff0000; --dardred: #B00000;
+    --green1: #A2F899; --green2: #63F654;  --green3: #4DC141;
+    --font-green: #063F00;
+    --blue1: #E2EDED; --blue2: #375b9d; --blue3: #051B43;
 }
 
 .centralized-page, .centralized{
@@ -14,6 +22,11 @@ body{
 }
 
 .center-flex{
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.rotate{
+    transform: rotate(-180deg);
 }

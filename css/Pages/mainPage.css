@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
-    background-color: #E2EDED;
     margin: 10px;
 }
 
@@ -28,7 +27,7 @@
 }
 
 .curso-btn{
-    background-color: #ff0000;
+    background-color: var(--red);
     width: 150px;
     text-align: center;
     color: white;
@@ -45,7 +44,7 @@
 }
 
 .curso-btn:hover{
-    background-color: #B00000;
+    background-color: var(--dardred);
 }
 
 @media (orientation: landscape) and (max-height: 600px) {

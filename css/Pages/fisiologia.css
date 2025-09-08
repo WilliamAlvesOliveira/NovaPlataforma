@@ -30,9 +30,9 @@
     padding: 6px;
     aspect-ratio: 1/1;
     color: white;
-    border: 2px solid #1b4716;
+    border: 2px solid var(--font-green);
     border-radius: 50%;
-    box-shadow: 4px 4px 8px #063f00cd;
+    box-shadow: 4px 4px 8px #063f00c0;
 }
 
 .fa-arrow-rotate-left{

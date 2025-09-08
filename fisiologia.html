@@ -139,6 +139,7 @@
         
         window.addEventListener('load', showButtons);
         window.addEventListener('scroll',showButtons);
+        window.addEventListener('click',showButtons);
 
         menu.addEventListener('mouseenter', () => {
             clearTimeout(timer)
@@ -147,7 +148,7 @@
         menu.addEventListener('mouseleave', () => {
             timer = setTimeout(() => {
                 menu.classList.remove('show')
-            }, 3000)
+            }, 1000)
         })
     </script>
     
