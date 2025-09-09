@@ -20,7 +20,6 @@ header, footer{
 
 #menu-principal{
     max-width: 1300px;
-    max-height: 50vh;
     overflow: hidden;
     transition: opacity 0.5s ease-in-out;
 }
@@ -185,6 +184,10 @@ footer a{
     }
     .menu-principal-btn{
         padding: 5px;
+    }
+
+    .section-img{
+        width: 100px;
     }
 }
 
