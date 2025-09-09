@@ -13,34 +13,58 @@
     </header>
 
     <div class="option-bar center-flex">
-        <nav class="menu inactive center-flex " aria-label="Menu principal">
-            <a href="/fisiologia.html" class="menu-principal-btn">
-                disciplinas
-            </a href="#">
-            <a href="#" class="menu-principal-btn">
-                Opção
-            </a href="#">
-            <a href="#" class="menu-principal-btn">
-                Flash Cards
-            </a href="#">
-            <a href="#" class="menu-principal-btn">
-                Mapa Mental
-            </a href="#">
-            <a href="#" class="menu-principal-btn">
-                Simulados
-            </a href="#">
-            <a href="#" class="menu-principal-btn">
-                Notícias
-            </a href="#">
+        <button class="open-close-menu center-flex"
+        aria-expanded="false" 
+        aria-controls="menu-principal">
+            MENU <span aria-hidden="true">▼</span>
+        </button>
+
+        <nav id="menu-principal" class="inactive" aria-label="Menu principal">
+            <ul class="center-flex">
+                <li class="menu-principal-btn">
+                    <a href="/fisiologia.html" >
+                        Disciplinas
+                    </a>
+                </li>
+                
+                <li class="menu-principal-btn">
+                    <a href="#" >
+                        Opção
+                    </a>
+                </li>
+                
+                <li class="menu-principal-btn">
+                    <a href="#" >
+                        Flash Cards
+                    </a>
+                </li>
+                
+                <li class="menu-principal-btn">
+                    <a href="#" >
+                        Mapa Mental
+                    </a>
+                </li>
+                
+                <li class="menu-principal-btn">
+                    <a href="#" >
+                        Simulados
+                    </a>
+                </li>
+                
+                <li class="menu-principal-btn">
+                    <a href="#">
+                        Notícias
+                    </a>
+                </li>
+            </ul>
         </nav>
-        <button class="open-close-menu center-flex">MENU <span>▼</span></button>
     </div>
 
     <h1 class="centralized ">Curso Enfermagem</h1>
 
     <main>
         <section class="secao center-flex">
-            <img class="section-img" src="notebookImg.png" alt="">
+            <img class="section-img" src="notebookImg.png" alt="imagem de um caderno">
             <div class="section-info">
                 <h3>Quer dar um <strong>UP</strong> no seu preparo para o vastubular?</h3>
                 <p>Em nossa página você encontra... Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam, labore fugit dolorum voluptate exercitationem? A doloribus mollitia minima minus perferendis vero consectetur eos, deleniti corporis eaque, porro esse tenetur.</p>
@@ -84,36 +108,41 @@
     </footer>
 
     <script>
-        const menu = document.querySelector('.menu')
+        const menu = document.querySelector('#menu-principal')
         const menuButton = document.querySelector('.open-close-menu')
-        const arrow = document.querySelector('.open-close-menu > span')
+        const arrow = menuButton.querySelector('span')
 
         menuButton.addEventListener('click', (e) => {
-            e.stopPropagation()
-            toggleMenu()
+        e.stopPropagation()
+        toggleMenu()
         })
 
         function toggleMenu() {
-            if (menu.classList.contains('inactive')) {
-                menu.classList.remove('inactive')
-                arrow.classList.add('rotate')
-                document.addEventListener('click', handleClickOutside)
-            } else {
-                closeMenu()
-            }
+        const isClosed = menu.classList.contains('inactive')
+
+        if (isClosed) {
+            menu.classList.remove('inactive')
+            arrow.classList.add('rotate')
+            menuButton.setAttribute('aria-expanded', 'true')
+            document.addEventListener('click', handleClickOutside)
+        } else {
+            closeMenu()
+        }
         }
 
         function closeMenu() {
-            menu.classList.add('inactive')
-            arrow.classList.remove('rotate')
-            document.removeEventListener('click', handleClickOutside)
+        menu.classList.add('inactive')
+        arrow.classList.remove('rotate')
+        menuButton.setAttribute('aria-expanded', 'false')
+        document.removeEventListener('click', handleClickOutside)
         }
 
         function handleClickOutside(e) {
-            if (!menu.contains(e.target) && !menuButton.contains(e.target)) {
-                closeMenu()
-            }
+        if (!menu.contains(e.target) && !menuButton.contains(e.target)) {
+            closeMenu()
         }
+        }
+
     </script>
 </body>
 </html>

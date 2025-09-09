@@ -1,0 +1,74 @@
+#welcome-page{
+    flex-direction: column;
+    margin: 10px;
+}
+
+.logo{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 500px;
+    min-width: 250px;
+}
+
+.welcome-info{
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.welcome-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 90%;
+    width: 300px;
+    background-image: linear-gradient(var(--blue2), var(--blue3));
+    padding: 20px 50px;
+    border-radius: 20px;
+}
+
+.welcome-form label{
+    color: white;
+}
+
+.welcome-form button{
+    grid-column: 2;
+    justify-self: end;
+    background-image: linear-gradient(var(--green1), var(--green2));
+    color: forestgreen;
+    width: auto;
+    padding: 3px 10px;
+    border-radius: 1000px;
+}
+
+.disabled{
+    display: none;
+}
+
+.entrar-btn{
+    background-color: var(--red);
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media (orientation: landscape) and (max-height: 600px) {
+    .logo{
+        max-width: 200px;
+        margin-top: 20px;
+    }
+
+    .welcome-form{
+        width: 300px;
+        gap: 10px;
+        border-radius: 5px;
+    }
+}
+
+@media (orientation: portrait){
+
+}

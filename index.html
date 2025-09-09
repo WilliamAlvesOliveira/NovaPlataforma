@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página entrada</title>
     <link rel="stylesheet" href="./css/mainStyle.css">
-    <link rel="stylesheet" href="./css/Pages/mainPage.css">
+    <link rel="stylesheet" href="./css/Pages/welcomePage.css">
 </head>
-<body class="centralized-page main-page">
-    <div class="welcome">
-        <header>
-            <img class="logo" src="logo-enfermagem.png" alt="logo">
-        </header>
-        <div class="main-info center-flex">
-            <p class="home">Bem vindo a página</p>
-            <h2 >Nossos Cursos</h2>
-            <a class="curso-btn" href="enfermagem.html"><span>Enfermagem</span></a>
-        </div>
+<body id="welcome-page" class="center-flex">
+    <header>
+        <img class="logo" src="logo-enfermagem.png" alt="logo">
+    </header>
+    <div class="welcome-info center-flex">
+        <p class="welcome-text">Bem vindo a página</p>
+        <form action="POST" class="welcome-form center-flex">
+            <label for="usuario">Usuário</label>
+            <input type="text">
+            <label for="email">e-mail</label>
+            <input type="email">
+            <label class="password-field disabled" for="password">Senha</label>
+            <input class="password-field disabled" type="password">
+            <button class="login-btn">Fazer login</button>
+        </form>
+        <a class="entrar-btn" href="enfermagem.html">Entrar sem login</a>
     </div>
-   
 </body>
 </html>
