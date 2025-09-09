@@ -4,11 +4,6 @@
 }
 
 #backward-buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 10px;
-    margin-right: 20px;
     z-index: 10;
 
     position: fixed;
@@ -24,6 +19,16 @@
     right: 5px;
 }
 
+#backward-buttons > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+    gap: 15px;
+    border: none;
+    list-style-type: none;
+}
+
 .fa-house{
     background-color: #4DC141;
     font-size: 20px;
@@ -36,6 +41,7 @@
 }
 
 .fa-arrow-rotate-left{
+    justify-self: flex-end;
     background-color: #ff0000;
     padding: 8px;
     aspect-ratio: 1/1;
@@ -47,15 +53,16 @@
     margin-right: 10px;
 }
 
-#backward-buttons > a > i:hover{
+#backward-buttons ul > li > a > i:hover{
     transform: scale(1.2);
 }
 
-li{
+.aulas > li{
     border: 1px solid black;
     border-radius: 15px;
     margin-bottom: 20px;
-    list-style: none;
+    list-style: none;;
+    overflow: hidden;
 }
 
 .titulo-aula{
