@@ -23,9 +23,9 @@
 .welcome-form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 13px;
     align-items: center;
     justify-content: center;
-    gap: 20px;
 
     background-image: linear-gradient(var(--blue2), var(--blue3));
     width: 300px;
@@ -36,7 +36,22 @@
 }
 
 .welcome-form label{
+    grid-column: 1;
     color: white;
+}
+
+.welcome-form input{
+    grid-column: 2;
+}
+
+.err-msg{
+    grid-column: 1/ span 2;
+    
+    font-size: 0.7rem;
+    color: var(--red1);
+    text-align: right;
+
+    margin-bottom: 10px;
 }
 
 .welcome-form button{
@@ -47,14 +62,10 @@
 
     width: auto;
 
-    color: forestgreen;
+    color: var(--font-green);
 
     padding: 3px 10px;
     border-radius: 1000px;
-}
-
-.disabled{
-    display: none;
 }
 
 .entrar-btn{

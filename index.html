@@ -13,15 +13,27 @@
     </header>
     <div class="welcome-info center-flex">
         <p class="welcome-text">Bem vindo a página</p>
-        <form action="POST" class="welcome-form center-flex">
+
+        <form method="POST" class="welcome-form center-flex">
             <label for="usuario">Usuário</label>
-            <input type="text">
-            <label for="email">e-mail</label>
-            <input type="email">
-            <label class="password-field disabled" for="password">Senha</label>
-            <input class="password-field disabled" type="password">
+            <input id="usuario" type="text" 
+                aria-errormessage="erro-usuario" aria-invalid="false">
+            <p id="erro-usuario" class="err-msg invisible">Usuário não encontrado</p>
+
+            <label for="email">E-mail</label>
+            <input id="email" type="email" 
+                aria-errormessage="erro-email" aria-invalid="false">
+            <p id="erro-email" class="err-msg invisible">E-mail não encontrado</p>
+
+            <label for="password" class="password-field disabled">Senha</label>
+            <input id="password" class="password-field disabled" type="password"
+                aria-errormessage="erro-senha" aria-invalid="false">
+            <p id="erro-senha" class="err-msg disabled invisible">Senha inválida</p>
+
             <button class="login-btn">Fazer login</button>
         </form>
+
+
         <a class="entrar-btn" href="enfermagem.html">Entrar sem login</a>
     </div>
 </body>

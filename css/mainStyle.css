@@ -30,6 +30,20 @@ body{
     justify-content: center;
 }
 
+.disabled{
+    display: none;
+}
+
+.invisible{
+    opacity: 0;
+}
+
+.hidden{
+    display: hidden;
+    opacity: 0;
+    height: 0;
+}
+
 .rotate{
     transform: rotate(-180deg);
 }
