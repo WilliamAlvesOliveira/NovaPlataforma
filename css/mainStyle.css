@@ -1,20 +1,23 @@
 *{
-    margin: 0;
-    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;;
 }
 
 body{
-    background-color: #E2EDED ;
+    background-color: var(--main-bg) ;
 }
 
 :root{
+    --main-bg: #E2EDED ;
     --text-bg-white: #F5F5F5;
-    --red: #ff0000; --dardred: #B00000;
+    --red1: #ee9e9e; --red2: #ff0000; --red3: #B00000;
+    --font-red: #3b0101;
     --green1: #A2F899; --green2: #63F654;  --green3: #4DC141;
     --font-green: #063F00;
-    --blue1: #E2EDED; --blue2: #375b9d; --blue3: #051B43;
+    --blue1: #7F9BCD; --blue2: #375b9d; --blue3: #051B43;
 }
 
 .centralized-page, .centralized{

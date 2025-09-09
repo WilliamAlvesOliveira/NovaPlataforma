@@ -14,6 +14,7 @@ header, footer{
     top: -1px;
     flex-direction:column-reverse;
     background-color: var(--blue3);
+
     padding: 5px;
 }
 
@@ -31,12 +32,15 @@ header, footer{
 }
 
 .menu-principal-btn{
-    text-align: center;
     background-image: radial-gradient(var(--green1), var(--green2));
+
     padding: 15px;
     width: 150px;
+
+    text-align: center;
     font-weight: bold;
     font-size: 16px;
+
     border-radius: 5px;
 }
 
@@ -48,26 +52,32 @@ header, footer{
 #menu-principal ul{
     flex-wrap: wrap;
     gap: 15px;
+
     list-style-type: none;
 }
 
 .open-close-menu{
     justify-content: center;
     gap: 5px;
+
     background-color: transparent;
     margin-left: 14px;
     padding: 5px 0px 0px 2px;
+
     color: white;
     font-size: 12px;
     font-weight: bold;
+
     border: none;
     border-bottom:2px solid transparent;
 }
 
 .open-close-menu span{
     display: inline-block;
-    transition: transform 0.4s ease-in-out;
+
     font-size: 8px;
+
+    transition: transform 0.4s ease-in-out;
 }
 
 h1{
@@ -77,12 +87,14 @@ h1{
 
 main{
     justify-self: center;
+
     background-color: var(--text-bg-white);
-    outline: 2px solid var(--red);
-    border-radius: 3px;
     padding: 15px;
-    max-width: 2500px;
+    max-width:20500px;
     overflow-y: auto;
+
+    border-radius: 3px;
+    outline: 2px solid var(--red2);
 }
 
 main > h2{
@@ -93,6 +105,7 @@ main > h2{
 .secao{
     padding: 20px;
     margin-bottom: 20px;
+
     border-bottom: 1px solid var(--red);
     border-radius: 0px 0px 5px 0px;
 }
@@ -108,6 +121,7 @@ main > h2{
 .section-img{
     width: 300px;
     max-width: 33%;
+
     animation: floating 3s ease-in-out infinite;
 }
 
@@ -117,23 +131,29 @@ main > h2{
 
 #destaque-premium{
     flex-direction: column;
-    background-color: rgb(225, 185, 185);
+
+    background-color: var(--red1);
+
     padding: 5px;
 }
 
 footer{
     margin-top: 10px;
     padding: 4px;
+
     text-align: center;
 }
 
 footer a{
     background-image: linear-gradient(var(--green1), var(--green2));
-    color: #063F00;
-    text-decoration: none;
+
     font-size: 12px;
     font-weight: bold;
+    color: #063F00;
+    text-decoration: none;
+
     padding: 2px 10px;
+
     border-radius: 1000px;
     outline: 1px solid var(--font-green);
 }
@@ -141,8 +161,9 @@ footer a{
 @media (max-width: 1000px){ 
     .secao{
         flex-direction: column;
-        margin-bottom: 10px;
+
         padding: 3px 0px 10px 0px;
+        margin-bottom: 10px;
         border-bottom: 1px solid var(--red);
         border-radius: 0px 0px 5px 0px;
     }
@@ -158,9 +179,9 @@ footer a{
     }
 
     #menu-principal{
-        margin: 100;
-        max-height: 25dvh;
         gap: 5px;
+        max-height: 25dvh;
+        margin: 100;
     }
     .menu-principal-btn{
         padding: 5px;
@@ -169,14 +190,14 @@ footer a{
 
 @media (max-width: 355px){
     #menu-principal{
-        padding: 5px;
         gap: 5px;
+        padding: 5px;
     }
 
     .menu-principal-btn{
-        padding: 5px;
         width: 100px;
         font-size: 12px;
+        padding: 5px;
         border: 1px solid var(--font-green);
         border-radius: 5px;
     }
@@ -187,8 +208,8 @@ footer a{
     }
 
     .open-close-menu:hover{
-        cursor: pointer;
         border-bottom: 2px solid var(--green1);
+        cursor: pointer;
     }
 
     footer a:hover{
