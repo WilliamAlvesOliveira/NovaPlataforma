@@ -82,13 +82,7 @@
 @media (orientation: landscape) and (max-height: 600px) {
     .logo{
         max-width: 200px;
-        margin-top: 20px;
-    }
-
-    .welcome-form{
-        gap: 10px;
-        width: 300px;
-        border-radius: 5px;
+        margin-top: 5px;
     }
 }
 
