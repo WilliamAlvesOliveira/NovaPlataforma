@@ -38,7 +38,7 @@ header, footer{
 
     text-align: center;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
 
     border-radius: 5px;
 }
@@ -88,16 +88,18 @@ main{
     justify-self: center;
 
     background-color: var(--text-bg-white);
+    width: 100%;
+    max-width:1200px;
     padding: 15px;
-    max-width:20500px;
+
     overflow-y: auto;
 
-    border-radius: 3px;
+    border-radius: 5px;
     outline: 2px solid var(--red2);
+    box-shadow: 10px 10px 15px #3b01013a;
 }
 
 main > h2{
-    text-align: center;
     color: black;
 }
 
@@ -109,15 +111,22 @@ main > h2{
     border-radius: 0px 0px 5px 0px;
 }
 
+
 .secao h3{
     margin-bottom: 10px;
 }
 
 .secao p{
-    text-indent: 20px;
+    max-width: 800px;
+    text-indent: 30px;
+    line-height: 1.4em;
 }
 
-.section-img{
+.section-info{
+    justify-self: center;
+}
+
+.section-info img{
     float: left;
     width: 300px;
     max-width: 33%;
@@ -127,16 +136,14 @@ main > h2{
     animation: floating 3s ease-in-out infinite;
 }
 
-.section-info{
-    align-self: flex-start;
-}
-
-#destaque-premium{
-    flex-direction: column;
-
+#destaque{
     background-color: var(--red1);
 
-    padding: 5px;
+    padding: 25px;
+}
+
+#destaque p{
+    max-width: 100%;
 }
 
 footer{
