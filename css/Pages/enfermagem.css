@@ -118,8 +118,11 @@ main > h2{
 }
 
 .section-img{
+    float: left;
     width: 300px;
     max-width: 33%;
+
+    margin-right: 10px;
 
     animation: floating 3s ease-in-out infinite;
 }
@@ -159,8 +162,6 @@ footer a{
 
 @media (max-width: 1000px){ 
     .secao{
-        flex-direction: column;
-
         padding: 3px 0px 10px 0px;
         margin-bottom: 10px;
         border-bottom: 1px solid var(--red);
