@@ -103,7 +103,6 @@ main > h2{
 }
 
 .secao{
-    padding: 20px;
     margin-bottom: 20px;
 
     border-bottom: 1px solid var(--red);
