@@ -15,9 +15,9 @@ body{
     --text-bg-white: #F5F5F5;
     --red1: #ee9e9e; --red2: #ff0000; --red3: #B00000;
     --font-red: #3b0101;
-    --green1: #A2F899; --green2: #63F654;  --green3: #4DC141;
+    --green1: #A2F899; --green2: #63F654; --green3: #4DC141;
     --font-green: #063F00;
-    --blue1: #7F9BCD; --blue2: #375b9d; --blue3: #051B43;
+    --blue1: #7f9bcd; --blue2: #375b9d; --blue3: #051B43;
 }
 
 .centralized-page, .centralized{

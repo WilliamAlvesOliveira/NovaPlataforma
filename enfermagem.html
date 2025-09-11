@@ -9,7 +9,7 @@
 </head>
 <body id="enfermagem-page">
     <header>
-        <img class="header-logo" src="./src/imges/logo-enfermagem.png" alt="logo">
+        <img class="header-logo" src="./src/imges/informagem-mini-logo.png" alt="logo">
     </header>
 
     <div class="option-bar center-flex">
@@ -121,34 +121,34 @@
         const arrow = menuButton.querySelector('span')
 
         menuButton.addEventListener('click', (e) => {
-        e.stopPropagation()
-        toggleMenu()
+            e.stopPropagation()
+            toggleMenu()
         })
 
         function toggleMenu() {
-        const isClosed = menu.classList.contains('inactive')
+            const isClosed = menu.classList.contains('inactive')
 
-        if (isClosed) {
-            menu.classList.remove('inactive')
-            arrow.classList.add('rotate')
-            menuButton.setAttribute('aria-expanded', 'true')
-            document.addEventListener('click', handleClickOutside)
-        } else {
-            closeMenu()
-        }
+            if (isClosed) {
+                menu.classList.remove('inactive')
+                arrow.classList.add('rotate')
+                menuButton.setAttribute('aria-expanded', 'true')
+                document.addEventListener('click', handleClickOutside)
+            } else {
+                closeMenu()
+            }
         }
 
         function closeMenu() {
-        menu.classList.add('inactive')
-        arrow.classList.remove('rotate')
-        menuButton.setAttribute('aria-expanded', 'false')
-        document.removeEventListener('click', handleClickOutside)
+            menu.classList.add('inactive')
+            arrow.classList.remove('rotate')
+            menuButton.setAttribute('aria-expanded', 'false')
+            document.removeEventListener('click', handleClickOutside)
         }
 
         function handleClickOutside(e) {
-        if (!menu.contains(e.target) && !menuButton.contains(e.target)) {
-            closeMenu()
-        }
+            if (!menu.contains(e.target) && !menuButton.contains(e.target)) {
+                closeMenu()
+            }
         }
 
     </script>
