@@ -3,8 +3,9 @@ header, footer{
 }
 
 .header-logo{
-    width: 30%;
+    width: 40vw;
     max-width: 200px;
+    min-width: 150px;
     margin-left: 20px;
 }
 
@@ -88,8 +89,6 @@ main{
     background-color: var(--text-bg-white);
     width: 100%;
     max-width:1200px;
-    padding: 15px;
-
     overflow-y: auto;
 
     margin: auto;
@@ -105,6 +104,7 @@ main > h2{
 .secao{
     margin-bottom: 20px;
 
+    padding: 10px;
     border-bottom: 1px solid var(--red);
     border-radius: 0px 0px 5px 0px;
 }
@@ -137,7 +137,7 @@ main > h2{
 #destaque{
     background-color: var(--red1);
 
-    padding: 25px;
+    padding: 10px;
 }
 
 #destaque p{
@@ -167,7 +167,6 @@ footer a{
 
 @media (max-width: 1000px){ 
     .secao{
-        padding: 3px 0px 10px 0px;
         margin-bottom: 10px;
         border-bottom: 1px solid var(--red);
         border-radius: 0px 0px 5px 0px;
@@ -180,7 +179,7 @@ footer a{
 
 @media (orientation: landscape) and (max-height: 400px){
     .header-logo{
-        width: 100px;
+        width: 150px;
     }
 
     #menu-principal{
