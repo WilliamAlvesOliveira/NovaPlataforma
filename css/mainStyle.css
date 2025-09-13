@@ -30,6 +30,10 @@ body{
     justify-content: center;
 }
 
+.allign-right{
+    text-align: right;
+}
+
 .disabled{
     display: none;
 }
@@ -42,6 +46,7 @@ body{
     display: hidden;
     opacity: 0;
     height: 0;
+    width: 0;
 }
 
 .rotate{

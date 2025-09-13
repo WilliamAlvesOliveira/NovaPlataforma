@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disciplinas</title>
+    <link rel="stylesheet" href="../css/mainStyle.css">
+    <link rel="stylesheet" href="./homeDisciplinas.css">
+</head>
+<body id="homeDisciplinas" class="center-flex">
+    <div id="menu-container">
+        <div id="menu-btn">
+            <div class="menu-open-close-btn">
+                <span id="btn-text">abrir menu</span>
+                <span id="btn-arrow">➤</span></div>
+        </div>
+        <nav id="disciplinas-menu" class="closed">
+            <ul>Ciências Biológicas e da Saúde
+                <li><a href="#anatomia-humana">Anatomia Humana</a></li>
+                <li>Fisiologia</li>
+                <li>Microbiologia e Imunologia</li>
+                <li>Parasitologia</li>
+                <li>Bioquímica</li>
+                <li>Genética</li>
+                <li>Farmacologia</li>
+                <li>Patologia</li>
+            </ul>
+
+            <ul>Ciências Humanas e Sociais
+                <li>Psicologia aplicada à saúde</li>
+                <li>Sociologia e Antropologia</li>
+                <li>Ética e Bioética</li>
+                <li>Filosofia e Política de Saúde</li>
+                <li>Saúde Coletiva e Epidemiologia</li>
+            </ul>
+
+            <ul>Ciências da Enfermagem
+                <li>Fundamentos de Enfermagem</li>
+                <li>Semiologia e Semiotécnica de Enfermagem</li>
+                <li>Enfermagem em Saúde do Adulto e do Idoso</li>
+                <li>Enfermagem em Saúde da Criança e do Adolescente</li>
+                <li>Enfermagem em Saúde da Mulher (obstetrícia e ginecologia)</li>
+                <li>Enfermagem em Saúde Mental e Psiquiatria</li>
+                <li>Enfermagem em Saúde Coletiva / Saúde da Família</li>
+                <li>Enfermagem Médico-Cirúrgica</li>
+                <li>Enfermagem em Urgência e Emergência</li>
+                <li>Administração e Gestão em Enfermagem</li>
+                <li>Metodologia da Pesquisa em Enfermagem</li>
+                <li>Estágio Curricular Supervisionado</li>
+                <li>Trabalho de Conclusão de Curso (TCC)</li>
+            </ul>
+
+            <ul>Atividades complementares e optativas</ul>
+        </nav>
+    </div>
+    <header>
+        <h1>Disciplinas</h1>
+    </header>
+
+
+    <main>
+        <h2>Ciências Biológicas e da Saúde</h2>
+        <div id="Anatomia-humana">
+            <h3>Anatomia Humana</h3>
+            <p>Resumo: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil quam unde sint quasi exercitationem reprehenderit autem iste a dolorum quis, dolorem esse possimus rerum ipsa maxime voluptatem ex dicta.
+            Eius quo dicta facere temporibus impedit perferendis saepe magni molestias ex omnis. Fugit maxime minima est, libero harum sunt aperiam nostrum accusantium obcaecati quos dolorum nisi incidunt corrupti praesentium quidem!</p>
+            <a href="#">ir para Anatomia Humana</a>
+        </div>
+        
+        <div id="Fisiologia">
+            <h3>Fisiologia</h3>
+            <p class="allign-right">Resumo: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil quam unde sint quasi exercitationem reprehenderit autem iste a dolorum quis, dolorem esse possimus rerum ipsa maxime voluptatem ex dicta.
+            Eius quo dicta facere temporibus impedit perferendis saepe magni molestias ex omnis. Fugit maxime minima est, libero harum sunt aperiam nostrum accusantium obcaecati quos dolorum nisi incidunt corrupti praesentium quidem!</p>
+            <a href="#">ir para Fisiologia</a>
+        </div>
+
+        <div id="Microbiologia e Imunologia">
+            <h3>Microbiologia e Imunologia</h3>
+            <p>Resumo: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil quam unde sint quasi exercitationem reprehenderit autem iste a dolorum quis, dolorem esse possimus rerum ipsa maxime voluptatem ex dicta.
+            Eius quo dicta facere temporibus impedit perferendis saepe magni molestias ex omnis. Fugit maxime minima est, libero harum sunt aperiam nostrum accusantium obcaecati quos dolorum nisi incidunt corrupti praesentium quidem!</p>
+            <a href="#">ir para Microbiologia e Imunologia</a>
+        </div>
+
+        <h2>Ciências Humanas e Sociais</h2>
+
+         <div id="Psicologia aplicada à saúde">
+            <h3>Psicologia aplicada à saúde</h3>
+            <p>Resumo: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil quam unde sint quasi exercitationem reprehenderit autem iste a dolorum quis, dolorem esse possimus rerum ipsa maxime voluptatem ex dicta.
+            Eius quo dicta facere temporibus impedit perferendis saepe magni molestias ex omnis. Fugit maxime minima est, libero harum sunt aperiam nostrum accusantium obcaecati quos dolorum nisi incidunt corrupti praesentium quidem!</p>
+            <a href="#">ir para Psicologia aplicada à saúde</a>
+        </div>
+
+    </main>
+
+    <footer>fim</footer>
+
+    <script>
+
+    const menu = document.querySelector('#disciplinas-menu')
+    const menuBtn = document.querySelector('.menu-open-close-btn')
+    const btnText = menuBtn.querySelector('#btn-text')
+    const arrow = menuBtn.querySelector('#btn-arrow')
+
+    function showMenu() {
+        if (menu.classList.contains('closed')) {
+            menu.classList.remove('closed')
+            btnText.firstChild.textContent = 'fechar menu ' // troca o texto sem remover o span
+            arrow.textContent = '⮜'
+            menuBtn.style.backgroundImage = 'linear-gradient(var(--red2), var(--red3))'
+        } else {
+            menu.classList.add('closed')
+            btnText.firstChild.textContent = 'abrir menu ' // volta para abrir
+            arrow.classList.remove('rotate')
+            menuBtn.style.backgroundImage = '' // remove o gradiente
+        }
+    }
+
+    menuBtn.addEventListener('click', showMenu)
+    </script>
+    
+</body>
+</html>
+
+<!--
+   No Brasil, todos os cursos de graduação em Enfermagem precisam seguir as Diretrizes Curriculares Nacionais (DCNs) definidas pelo MEC (Resolução CNE/CES nº 3, de 2001). Isso significa que cada faculdade pode organizar sua grade de forma diferente, mas existe um núcleo obrigatório de áreas de conhecimento que deve estar presente em todos os cursos.
+
+Núcleo básico obrigatório em Enfermagem:
+
+Ciências Biológicas e da Saúde
+
+Anatomia Humana
+
+Fisiologia
+
+Microbiologia e Imunologia
+
+Parasitologia
+
+Bioquímica
+
+Genética
+
+Farmacologia
+
+Patologia
+
+Ciências Humanas e Sociais
+
+Psicologia aplicada à saúde
+
+Sociologia e Antropologia
+
+Ética e Bioética
+
+Filosofia e Política de Saúde
+
+Saúde Coletiva e Epidemiologia
+
+Ciências da Enfermagem (núcleo profissionalizante)
+
+Fundamentos de Enfermagem
+
+Semiologia e Semiotécnica de Enfermagem
+
+Enfermagem em Saúde do Adulto e do Idoso
+
+Enfermagem em Saúde da Criança e do Adolescente
+
+Enfermagem em Saúde da Mulher (obstetrícia e ginecologia)
+
+Enfermagem em Saúde Mental e Psiquiatria
+
+Enfermagem em Saúde Coletiva / Saúde da Família
+
+Enfermagem Médico-Cirúrgica
+
+Enfermagem em Urgência e Emergência
+
+Administração e Gestão em Enfermagem
+
+Metodologia da Pesquisa em Enfermagem
+
+Estágio Curricular Supervisionado (em todas as áreas da prática)
+
+Trabalho de Conclusão de Curso (TCC)
+
+Atividades complementares e optativas
+
+Cada instituição pode acrescentar disciplinas eletivas ou complementares (como Libras, informática em saúde, empreendedorismo, cuidados paliativos etc.), mas o núcleo básico acima é obrigatório.
+
+-->
