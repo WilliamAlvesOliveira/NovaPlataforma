@@ -1,0 +1,197 @@
+#homeDisciplinas{
+    flex-direction: column;
+    text-align: center;
+}
+
+header img{
+    margin-top: 15px;
+    width: 50vw;
+    max-width: 200px;
+}
+
+#disciplinas-menu.close-menu {
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: width 0.3s ease, opacity 0.5s ease;
+}
+
+#disciplinas-menu.open-menu {
+    width: 500px; 
+    max-width: 80vw;
+    opacity: 1;
+    overflow: auto;
+    transition: width 0.3s ease, opacity 0.5s ease;
+}
+
+.menu-close-btn{
+    background-image: var(--gradient-green2);
+    border: 1px solid var(--font-green);
+    border-left: none;
+}
+
+.menu-open-btn{
+    background-image: linear-gradient(var(--red2), var(--red3));
+    border: 1px solid var(--font-red);
+    border-left: none;
+}
+
+.menu-close-btn #btn-arrow{
+    text-shadow: 2px 2px 3px #000000f0;
+}
+
+.menu-open-btn  #btn-arrow{
+    text-shadow: -2px -2px 3px #000000f0;
+}
+
+#menu-container{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu-open-close-btn{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+
+    width: 55px;
+    height: 100px;
+    padding: 5px;
+
+    font-size: 14px;
+    line-height: 0.8em;
+    text-align: center;
+    color: white;
+
+    border-left: none;
+    border-radius: 0px 3px 3px 0px;
+}
+
+#btn-text{
+    text-shadow: 3px 3px 5px #000000f0; 
+}
+
+#btn-arrow{
+    transition: transform 0.5s ease-in-out;
+}
+
+#disciplinas-menu{
+    background-color: var(--text-bg-white);
+    height: 100%;
+
+    text-align: left;
+    border-right: 2px solid var(--red2);
+    border-bottom: 2px solid var(--red2);
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    transition:opacity 0.5s ease-in-out;
+}
+
+#container-opcoes{
+    max-height: 90dvh;
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+#container-opcoes::-webkit-scrollbar {
+  width: 5px;
+}
+
+#container-opcoes::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+}
+
+#container-opcoes::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+#disciplinas-menu h2{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#disciplinas-menu h3{
+    text-align: left;
+    padding: 5px;
+    margin: 5px 0 0 0;
+}
+
+#disciplinas-menu li{
+    list-style-position: inside;
+    list-style-type: circle;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+#disciplinas-menu li:nth-child(odd){
+    background-color: #ebecec;
+}
+
+#disciplinas-menu a{
+    color: rgb(89, 88, 88);
+    text-decoration-color: rgb(88, 88, 88);
+}
+
+main{
+    max-width: 1000px;
+    padding: 10px;
+}
+
+main section{
+    margin-bottom: 30px;
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+main p{
+    max-width: 800px;
+    text-align: left;
+    text-indent: 30px;
+    line-height: 1.6em;
+    margin-bottom:5px;
+}
+
+main > section > a{
+    margin-bottom: 30px;
+}
+
+.disciplina-container{
+    background-color: var(--text-bg-white);
+    padding: 15px;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+@media(max-width:850px){
+    .menu-open-close-btn{
+        margin-top: 3px;
+        height: auto;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    #disciplinas-menu li:hover{
+        background-color: lightgray;
+    }
+}

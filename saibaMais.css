@@ -1,0 +1,73 @@
+#saiba-mais-menu{
+    padding: 30px;
+    display: flex;
+    gap: 5px;
+    text-align: center;
+}
+
+#saiba-mais-menu button{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+
+.btn-out-title{
+    display: none;
+}
+
+#orgaos-btn{
+    background-image: url(./src/imges/orgãos-cartoon.png);
+}
+
+#ossos-btn{
+    background-image: url(./src/imges/esqueleto-cartoon.png);
+}
+
+#celulas-btn{
+    background-image: url(./src/imges/celulas-cartoon.png);
+}
+
+#tecidos-btn{
+    background-image: url(./src/imges/tecidos-cartton.png);
+}
+#saiba-mais-menu button span{
+    background-color: #00000080;
+    width: 100%;
+    padding: 3px;
+    color: white;
+    margin: 0;
+}
+
+#saiba-mais-contents{
+    background-color: azure;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px){
+    #saiba-mais-menu button{
+        width: 80px;
+    }
+
+    .btn-out-title{
+        display: inline-block;
+        background-color: #00000080;
+        color: white;
+        width: 100%;
+    }
+
+    .btn-in-title{
+        display: none;
+    }
+}

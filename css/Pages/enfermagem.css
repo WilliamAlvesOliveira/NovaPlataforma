@@ -33,10 +33,7 @@ header, footer{
 
 .menu-principal-btn{
     background-image: radial-gradient(var(--green1), var(--green2));
-
-    padding: 15px;
-    width: 150px;
-
+    
     text-align: center;
     font-weight: bold;
     font-size: 1rem;
@@ -45,6 +42,9 @@ header, footer{
 }
 
 .menu-principal-btn a{
+    padding: 15px;
+    width: 150px;
+    height: 50px;
     color: var(--font-green);
     text-decoration: none;
 }
@@ -184,11 +184,14 @@ footer a{
 
     #menu-principal{
         gap: 5px;
-        margin: 100;
     }
-    .menu-principal-btn{
-        padding: 5px;
+
+    .menu-principal-btn a{
+        width: 120px;
+        height: 40px;
     }
+
+
 
     .section-img{
         width: 100px;
