@@ -6,7 +6,7 @@
 header img{
     margin-top: 15px;
     width: 50vw;
-    max-width: 300px;
+    max-width: 200px;
 }
 
 #disciplinas-menu.close-menu {
@@ -161,7 +161,7 @@ h2{
 
 h3{
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 main p{
@@ -172,12 +172,15 @@ main p{
     margin-bottom:5px;
 }
 
-main section:nth-of-type(even) p{
-    text-align: right;
-}
-
 main > section > a{
     margin-bottom: 30px;
+}
+
+.disciplina-container{
+    background-color: var(--text-bg-white);
+    padding: 15px;
+    border: 2px solid red;
+    border-radius: 5px;
 }
 
 @media(max-width:850px){
