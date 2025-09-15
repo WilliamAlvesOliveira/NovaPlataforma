@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fisiologia</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/mainStyle.css">
-    <link rel="stylesheet" href="./css/Pages/fisiologia.css">
+    <link rel="stylesheet" href="../../css/mainStyle.css">
+    <link rel="stylesheet" href="./fisiologia.css">
 </head>
 <body id="fisiologia-page">
         <nav id="backward-buttons" aria-label="opções de voltar">
         <ul>
             <li>
-                <a href="index.html" aria-label="voltar para Home">
+                <a href="../../enfermagem.html" aria-label="voltar para Home">
                     <i class="fa-solid fa-house"></i>
                 </a>
             </li>
             <li>
-                <a href="enfermagem.html" aria-label="Voltar para Disciplinas">
+                <a href="../homeDisciplinas.html" aria-label="Voltar para Disciplinas">
                     <i class="fa-solid fa-arrow-rotate-left"></i>
                 </a>
             </li>
@@ -150,7 +150,7 @@
             menu.classList.add('show');
             timer = setTimeout(() => {
                 menu.classList.remove('show');
-            }, 3000);
+            }, 1500);
         }
         
         window.addEventListener('load', showButtons);
@@ -164,7 +164,7 @@
         menu.addEventListener('mouseleave', () => {
             timer = setTimeout(() => {
                 menu.classList.remove('show')
-            }, 1000)
+            }, 1500)
         })
     </script>
     
