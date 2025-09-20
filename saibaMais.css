@@ -1,8 +1,15 @@
-#saiba-mais-menu{
-    padding: 30px;
-    display: flex;
-    gap: 5px;
+
+#saiba-mais-contents{ 
+    margin-bottom: 50px;
     text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#saiba-mais-menu{ 
+    margin: 15px;
+    gap:15px;
 }
 
 #saiba-mais-menu button{
@@ -13,10 +20,18 @@
     aspect-ratio: 1/1;
     width: 120px;
     border: 2px solid black;
-    border-radius: 5px;
+    outline: transparent;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.537);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.1s ease-in-out;
 }
 
-
+#saiba-mais-menu button.active{
+    border: 1px solid green;
+    outline: 4px solid green;
+}
 
 .btn-out-title{
     display: none;
@@ -37,37 +52,114 @@
 #tecidos-btn{
     background-image: url(./src/imges/tecidos-cartton.png);
 }
+
 #saiba-mais-menu button span{
-    background-color: #00000080;
     width: 100%;
-    padding: 3px;
+    background-color: #00000080;
+    padding: 1px;
     color: white;
     margin: 0;
 }
 
-#saiba-mais-contents{
-    background-color: azure;
+#saiba-mais-option-window{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 230px;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+}
+
+#saiba-mais-option-window section{
+    margin: auto;
+    max-width: 100%;
+}
+
+
+.options-container{
     width: 100%;
-    height: 200px;
-    margin-bottom: 50px;
-    text-align: center;
+    overflow-x: scroll;
+}
+
+.options-container::-webkit-scrollbar{
+    background-color: transparent;
+    height:5px;
+}
+
+.options-container::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 1000px;
+}
+
+
+#saiba-mais-option-window h2{
+    display: flex;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+#orgaos-container{
+    padding: 0px 3px;
+    
+    align-self: center;
+    justify-content: flex-start;
+
+    gap: 20px;
+}
+
+#orgaos-container a{
+    margin: 0;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#orgaos-container img{
+    width: 100px;
+    aspect-ratio: 1/1;
     border: 1px solid black;
-    border-radius: 10px;
+}
+
+#saibaMais-MostrarMaisBtn{
+    display: block;
+    margin: auto;
 }
 
 @media (max-width: 600px){
+
+    #saiba-mais-menu{
+        gap:3vw;
+    }
     #saiba-mais-menu button{
-        width: 80px;
+        width: 20vw;
     }
 
     .btn-out-title{
         display: inline-block;
         background-color: #00000080;
+        margin-bottom: 5px;
         color: white;
-        width: 100%;
+        width:96%;
+        font-size: clamp(6px, 3.5vw, 16px);;
     }
 
     .btn-in-title{
         display: none;
+    }
+}
+
+@media (max-height: 600px){
+    #saiba-mais-menu button{
+        width: 80px;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    #saiba-mais-menu button:hover{
+        transform: scale(1.2);
+    }
+    #saiba-mais-menu button.active:hover{
+        transform: none;
     }
 }
